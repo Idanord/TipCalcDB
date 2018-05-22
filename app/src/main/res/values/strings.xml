@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TipCalcDB</string>
+    <string name="bill_amount_lable">Bill Amount</string>
+    <string name="tip_percent_lable">Tip Percent</string>
+    <string name="tip_amount_lable">Tip Amount</string>
+    <string name="decrease">-</string>
+    <string name="increase">+</string>
+    <string name="total_amount_lable">Total Amount</string>
+    <string name="view_history">History</string>
+    <string name="save">Save</string>
+</resources>
