@@ -8,4 +8,6 @@
     <string name="total_amount_lable">Total Amount</string>
     <string name="view_history">History</string>
     <string name="save">Save</string>
+    <string name="date">Date</string>
+    <string name="delete">Delete</string>
 </resources>

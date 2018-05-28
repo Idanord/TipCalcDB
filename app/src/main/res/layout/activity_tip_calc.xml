@@ -137,4 +137,4 @@
         android:text="@string/view_history" />
 
 </RelativeLayout>
-</android.support.constraint.ConstraintLayout>
+
