@@ -2,6 +2,7 @@ package com.example.will.tipcalcdb;
 
 import java.text.NumberFormat;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.KeyEvent;
@@ -27,6 +28,7 @@ public class TipCalcActivity extends Activity implements OnEditorActionListener,
     private TextView tipTextView;
     private TextView totalTextView;
     private Button   saveButton;
+    private Button viewHistoryButton;
 
     //define instance variables that should be saved
     private String billAmountString = "";
@@ -51,12 +53,14 @@ public class TipCalcActivity extends Activity implements OnEditorActionListener,
         tipTextView = (TextView) findViewById(R.id.tipTextView);
         totalTextView = (TextView) findViewById(R.id.totalTextView);
         saveButton = (Button) findViewById(R.id.saveButton);
+        viewHistoryButton = (Button) findViewById(R.id.viewHistoryButton);
 
         // set the listeners
         billAmountEditText.setOnEditorActionListener(this);
         percentUpButton.setOnClickListener(this);
         percentDownButton.setOnClickListener(this);
         saveButton.setOnClickListener(this);
+        viewHistoryButton.setOnClickListener(this);
 
         // get default SharedPreferences object
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
@@ -148,7 +152,8 @@ public class TipCalcActivity extends Activity implements OnEditorActionListener,
                 billAmountEditText.setText("");
                 break;
             case R.id.viewHistoryButton:
-                // start activity here...
+                //Start Activity
+                startActivity(new Intent(this, TipHistoryActivity.class));
                 break;
         }
     }

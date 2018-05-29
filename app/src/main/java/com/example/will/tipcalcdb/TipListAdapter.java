@@ -16,7 +16,7 @@ public class TipListAdapter extends BaseAdapter {
     private Context context;
     private ArrayList<Tip> tips;
 
-    public void TipListAdapter(Context context, ArrayList<Tip> tips){
+    public TipListAdapter(Context context, ArrayList<Tip> tips){
         this.context = context;
         this.tips = tips;
     }//end constructor
